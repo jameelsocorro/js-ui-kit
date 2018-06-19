@@ -1,0 +1,51 @@
+$breakpoints:
+    mobile 480,
+    tablet 840,
+    desktop 1280,
+    desktop2 1920,
+    desktop3 2560,
+    desktop4 3840;
+
+.flex {
+    display: flex;
+}
+
+.flex--column {
+    flex-direction: column;
+}
+
+.flex--row {
+    flex-direction: row;
+}
+
+//flex positioning
+.flex--center-items {
+    align-items: center;
+}
+
+.flex--center-content {
+    justify-content: center;
+}
+
+.flex--center-all {
+    align-items: center;
+    justify-content: center;
+}
+
+.flex--left {
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.flex--right {
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+//flex responsive
+.flex--tablet-row {
+    //for tablet
+    @media (min-width: #{nth($breakpoints, 2)}px) {
+        flex-direction: row;
+    }
+}
