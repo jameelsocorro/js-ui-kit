@@ -6,7 +6,7 @@ import {
     desktop2,
     desktop3,
     desktop4
-} from '../breakpoints';
+} from '../../breakpoints';
 
 export const AvatarContainer = styled.div`
     background: url(${ props => props.src }) center center no-repeat;
