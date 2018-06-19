@@ -1,4 +1,4 @@
-# js-design-core
+# js-ui-kit
 
 ### My design framework for creating react components
 
@@ -7,5 +7,5 @@
 ## Install
 
 ```bash
-$ npm install @js-ui-kit --save-dev
+$ npm install js-ui-kit --save-dev
 ```
