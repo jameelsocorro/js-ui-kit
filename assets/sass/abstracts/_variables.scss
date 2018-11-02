@@ -1,4 +1,29 @@
-$color-black-900: #212121;
+//Colors
+$colors:
+    primary #0F111A,
+    secondary #00BCD4,
+    info #2196f3,
+    success #1de9b6,
+    warning #ffc107,
+    danger #d32f2f,
+    black #212121,
+    white #FFFF;
+
+//Screen Resolutions
+$breakpoints:
+    mobile 480,
+    tablet 840,
+    desktop 1280,
+    desktop2 1920,
+    desktop3 2560,
+    desktop4 3840;
+
+//Spaces
+$spaces: 4, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80;
+$corners: top, bottom, left, right;
+
+//Whiteframes
+$shadow-color: #212121;
 $shadow-base-color: #424242;
 $shadow-key-umbra-opacity:      0.2;
 $shadow-key-penumbra-opacity:   0.14;
@@ -55,9 +80,3 @@ $whiteframe-shadow-21dp: 0px 10px 13px -6px rgba($shadow-base-color, $shadow-key
 $whiteframe-shadow-22dp: 0px 10px 14px -6px rgba($shadow-base-color, $shadow-key-umbra-opacity), 0px 22px 35px 3px rgba($shadow-base-color, $shadow-key-penumbra-opacity), 0px 8px 42px 7px rgba($shadow-base-color, $shadow-ambient-shadow-opacity) !default;
 $whiteframe-shadow-23dp: 0px 11px 14px -7px rgba($shadow-base-color, $shadow-key-umbra-opacity), 0px 23px 36px 3px rgba($shadow-base-color, $shadow-key-penumbra-opacity), 0px 9px 44px 8px rgba($shadow-base-color, $shadow-ambient-shadow-opacity) !default;
 $whiteframe-shadow-24dp: 0px 11px 15px -7px rgba($shadow-base-color, $shadow-key-umbra-opacity), 0px 24px 38px 3px rgba($shadow-base-color, $shadow-key-penumbra-opacity), 0px 9px 46px 8px rgba($shadow-base-color, $shadow-ambient-shadow-opacity) !default;
-
-@mixin whiteframe-shadow($dp: 1, $shadow-base-color: $color-black-900, $shadow-key-umbra-opacity: 0.2, $shadow-key-penumbra-opacity: 0.14, $shadow-ambient-shadow-opacity: 0.12) {
-	$shadows: nth($whiteframe-shadows, $dp);
-
-	box-shadow: nth($shadows, 1) rgba($shadow-base-color, $shadow-key-umbra-opacity), nth($shadows, 2) rgba($shadow-base-color, $shadow-key-penumbra-opacity), nth($shadows, 3) rgba($shadow-base-color, $shadow-ambient-shadow-opacity);
-}
