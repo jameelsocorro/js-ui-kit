@@ -1,0 +1,29 @@
+.btn:link,
+.btn:visited {
+    border-radius: 10rem;
+    box-shadow: $whiteframe-shadow-2dp;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 2.25rem;
+    letter-spacing: 0.089rem;
+    padding: 1.5rem 4rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    box-shadow: $whiteframe-shadow-4dp;
+    transform: translateY(-0.1rem);
+}
+
+.btn:active {
+    box-shadow: $whiteframe-shadow-1dp;
+    transform: translateY(-0.05rem);
+}
+
+.btn-white {
+    background-color: #FFF;
+    color: get-color(secondary);
+}

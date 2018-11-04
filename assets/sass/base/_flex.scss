@@ -12,12 +12,24 @@
 }
 
 //flex positioning
-.flex--center-items {
+.flex--item-start {
+    align-items: flex-start;
+}
+
+.flex--item-end {
+    align-items: flex-end;
+}
+
+.flex--item-center {
     align-items: center;
 }
 
-.flex--center-content {
+.flex--content-center {
     justify-content: center;
+}
+
+.flex--content-between {
+    justify-content: space-between;
 }
 
 .flex--center-all {

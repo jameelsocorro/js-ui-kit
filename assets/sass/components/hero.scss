@@ -1,0 +1,19 @@
+.hero {
+    background-size: cover;
+    background-position: top;
+    height: 95vh;
+    position: absolute;
+    width: 100%;
+background-color: rgba($color: get-color(secondary-light), $alpha: 0.7);
+    &--slice-bottom-right {
+        clip-path: polygon(0 0, 100% 0, 100% 84vh, 0% 100%);
+    }
+
+}
+
+.hero-logo {
+    background-size: cover;
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+}

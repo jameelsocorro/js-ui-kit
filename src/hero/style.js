@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 
 export const HeroContainer = styled.div`
-    height: ${ props => props.height || 100 }%;
+    height: ${ props => props.height || 100 }vh;
     width: 100%;
 
     ${ props => props.fixed && css`
@@ -13,6 +13,6 @@ export const HeroContainer = styled.div`
 export const HeroBackground = styled.div`
     background: url(${ props => props.src }) center center no-repeat;
     background-size: cover;
-    height: 100%;
+    height: 100vh;
     width: 100%;
 `;
