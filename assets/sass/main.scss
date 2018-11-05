@@ -12,5 +12,7 @@
 @import './components/button';
 @import './components/hero';
 
+@import './layouts/sections';
+
 @include init-colors();
 @include init-spaces();

@@ -1,12 +1,13 @@
 .hero {
     background-size: cover;
     background-position: top;
-    height: 95vh;
-    position: absolute;
+    height: 100vh;
+    position: fixed;
     width: 100%;
-background-color: rgba($color: get-color(secondary-light), $alpha: 0.7);
+    z-index: -1;
+
     &--slice-bottom-right {
-        clip-path: polygon(0 0, 100% 0, 100% 84vh, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0% 100%);
     }
 
 }

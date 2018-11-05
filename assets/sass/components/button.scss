@@ -1,29 +1,46 @@
-.btn:link,
-.btn:visited {
-    border-radius: 10rem;
-    box-shadow: $whiteframe-shadow-2dp;
+.btn-link,
+.btn {
+    cursor: pointer;
     display: inline-block;
-    font-size: 1rem;
     font-weight: 500;
     line-height: 2.25rem;
     letter-spacing: 0.089rem;
-    padding: 1.5rem 4rem;
     text-decoration: none;
     text-transform: uppercase;
     transition: all 0.3s ease-in-out;
+
+    &:hover {
+        transform: translateY(-0.1rem);
+    }
+
+    &:active {
+        transform: translateY(-0.05rem);
+    }
 }
 
-.btn:hover {
-    box-shadow: $whiteframe-shadow-4dp;
-    transform: translateY(-0.1rem);
-}
+.btn {
+    border-radius: 10rem;
+    box-shadow: $whiteframe-shadow-2dp;
+    font-size: 1rem;
+    padding: 1.5rem 4rem;
 
-.btn:active {
-    box-shadow: $whiteframe-shadow-1dp;
-    transform: translateY(-0.05rem);
+    &:hover {
+        box-shadow: $whiteframe-shadow-4dp;
+    }
+
+    &:active {
+        box-shadow: $whiteframe-shadow-1dp;
+    }
+
 }
 
 .btn-white {
     background-color: #FFF;
     color: get-color(secondary);
+}
+
+.btn-icon {
+    border-radius: 50%;
+    font-size: 3rem;
+    padding: 1rem;
 }
