@@ -2,7 +2,7 @@
 
 ### My design framework for creating react components
 
-[Demo](https://github.com/facebook/react)
+[Demo](https://jameelsocorro.github.io/js-ui-kit){:target="_blank"}
 
 ## Install
 
