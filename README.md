@@ -2,7 +2,7 @@
 
 ### My design framework for creating react components
 
-[Demo](https://jameelsocorro.github.io/js-ui-kit)
+[Demo](https://jameelsocorro.github.io)
 
 ## Install
 
