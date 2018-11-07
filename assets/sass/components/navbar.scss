@@ -1,0 +1,24 @@
+.navbar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    &--secondary {
+        background: linear-gradient(to left bottom,
+            rgba(get-color(secondary-light), 0.7),
+            rgba(get-color(secondary), 0.7));
+    }
+
+    &__logo {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    &__title {
+        color: #FFF;
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+}

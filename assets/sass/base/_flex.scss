@@ -47,10 +47,14 @@
     justify-content: flex-end;
 }
 
+.flex--wrap {
+    flex-wrap: wrap;
+}
+
 //flex responsive
 .flex--tablet-row {
     //for tablet
-    @media (min-width: #{nth($breakpoints, 2)}px) {
+    @media (min-width: #{get-resolution(mobile)}px) {
         flex-direction: row;
     }
 }
