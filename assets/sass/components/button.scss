@@ -1,0 +1,84 @@
+.btn-link,
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 500;
+    line-height: 2.25rem;
+    letter-spacing: 0.089rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        transform: translateY(-0.1rem);
+    }
+
+    &:active {
+        transform: translateY(-0.05rem);
+    }
+}
+
+.btn {
+    border: none;
+    border-radius: 10rem;
+    box-shadow: $whiteframe-shadow-2dp;
+    font-size: 1rem;
+    padding: 1.5rem 4rem;
+
+    &:hover {
+        box-shadow: $whiteframe-shadow-4dp;
+    }
+
+    &:active {
+        box-shadow: $whiteframe-shadow-1dp;
+    }
+
+    &-primary {
+        background-color: get-color(primary);
+        color: #FFF;
+    }
+
+    &-secondary {
+        background-color: get-color(secondary);
+        color: #FFF;
+    }
+
+    &-info {
+        background-color: get-color(info);
+        color: #FFF;
+    }
+
+    &-success {
+        background-color: get-color(success);
+        color: #FFF;
+    }
+
+    &-danger {
+        background-color: get-color(danger);
+        color: #FFF;
+    }
+
+    &-warning {
+        background-color: get-color(warning);
+        color: get-color(primary);
+    }
+
+    &-metal {
+        background-color: get-color(metal);
+        color: get-color(primary);
+    }
+
+    &-white {
+        background-color: #FFF;
+        color: get-color(secondary);
+    }
+
+    &-icon {
+        border-radius: 50%;
+        font-size: 3rem;
+        padding: 1rem;
+        min-height: 5rem;
+        min-width: 5rem;
+    }
+
+}

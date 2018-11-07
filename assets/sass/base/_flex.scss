@@ -1,10 +1,3 @@
-$breakpoints:
-    mobile 480,
-    tablet 840,
-    desktop 1280,
-    desktop2 1920,
-    desktop3 2560,
-    desktop4 3840;
 
 .flex {
     display: flex;
@@ -19,12 +12,24 @@ $breakpoints:
 }
 
 //flex positioning
-.flex--center-items {
+.flex--item-start {
+    align-items: flex-start;
+}
+
+.flex--item-end {
+    align-items: flex-end;
+}
+
+.flex--item-center {
     align-items: center;
 }
 
-.flex--center-content {
+.flex--content-center {
     justify-content: center;
+}
+
+.flex--content-between {
+    justify-content: space-between;
 }
 
 .flex--center-all {
@@ -42,10 +47,14 @@ $breakpoints:
     justify-content: flex-end;
 }
 
+.flex--wrap {
+    flex-wrap: wrap;
+}
+
 //flex responsive
 .flex--tablet-row {
     //for tablet
-    @media (min-width: #{nth($breakpoints, 2)}px) {
+    @media (min-width: #{get-resolution(mobile)}px) {
         flex-direction: row;
     }
 }

@@ -1,0 +1,20 @@
+.hero {
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+
+    &--slice-bottom-right {
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0% 100%);
+    }
+
+}
+
+.hero-logo {
+    background-size: cover;
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+}
